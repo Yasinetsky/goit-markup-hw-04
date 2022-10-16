@@ -5,6 +5,7 @@
 /* вторичный цвет фона #F5F4FA */
 /* футер контакт rgba(255, 255, 255, 0.6) */
 /* цвет подвала #2F303A */
+/* цвет иконок #AFB1B8 */
 
 :root {
   --primery-text-color: #757575;
@@ -16,6 +17,7 @@
   --second-bg-color: #F5F4FA;
   --footer-contact-color: rgba(255, 255, 255, 0.6);
   --footer-order-color: #2F303A;
+  --icon-border-color: #AFB1B8;
 }
 
 html {
@@ -273,10 +275,15 @@ header {
   margin-left: 30px;
 }
 
+.team-list .item {
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+    border-radius: 0px 0px 4px 4px;
+}
 .team-grup .description {
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: var(--primary-color-white);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-list .title {
   color: var(--title-text-color);
@@ -293,7 +300,63 @@ header {
   line-height: 1.18;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-item + .social-item {
+  margin-left: 10px;
+}
+
+.social-link {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  fill: var(--icon-border-color);
+}
+
+.social-link:hover,
+.social-link:active {
+  cursor: pointer;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  fill: var(--primary-color-white);
+}
+
+/* Clients */
+
+.clients-iten + .clients-iten {
+  margin-left: 30px;
+}
+
+
+.clients-list {
+  display: flex;
+}
+
+.clients-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--icon-border-color);
+  border-radius: 4px;
+  fill: var(--icon-border-color);
+}
+
+.clients-link:hover,
+.clients-link:active {
+  cursor: pointer;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  fill: var(--accent-color);
 }
 
 /* footer */
