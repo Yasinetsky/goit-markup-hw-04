@@ -398,6 +398,15 @@ margin-bottom: 9px;
 display: inline-block;
 }
 
+.footer .container {
+  display: flex;
+}
+
+.footer .second-title {
+  color: var(--primary-color-white);
+}
+
+
 /* Buttom */
 
 .button {
