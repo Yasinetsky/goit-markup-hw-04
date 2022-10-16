@@ -234,6 +234,7 @@ header {
   align-items: center;
   justify-content: center;
   background-color: var(--second-bg-color);
+  border-radius: 4px;
 }
 
 /* About US  */
