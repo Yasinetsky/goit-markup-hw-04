@@ -127,6 +127,11 @@ header {
   color: var(--accent-color);
 }
 
+.contact-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
 .contacts-nav .item + .item {
   margin-left: 50px;
 }
