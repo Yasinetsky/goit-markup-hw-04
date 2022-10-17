@@ -6,6 +6,7 @@
 /* футер контакт rgba(255, 255, 255, 0.6) */
 /* цвет подвала #2F303A */
 /* цвет иконок #AFB1B8 */
+/* цвет границы блока */
 
 :root {
   --primery-text-color: #757575;
@@ -18,6 +19,7 @@
   --footer-contact-color: rgba(255, 255, 255, 0.6);
   --footer-order-color: #2F303A;
   --icon-border-color: #AFB1B8;
+  --border-color: #EEEEEE;
 }
 
 html {
@@ -403,9 +405,30 @@ display: inline-block;
 }
 
 .footer .second-title {
+  font-style: normal;
   color: var(--primary-color-white);
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
+.footer-contact {
+  margin-right: 70px;
+}
+
+.footer-social .social-link {
+  fill: var(--primary-color-white);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.footer-social .social-link:hover,
+.footer-social .social-link:active {
+  cursor: pointer;
+  background-color: var(--accent-color);
+}
 
 /* Buttom */
 
@@ -453,6 +476,8 @@ display: inline-block;
 .project-filter .button:focus {
   color: var(--primary-color-white);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 /* Gruop */
@@ -472,14 +497,20 @@ display: inline-block;
   flex-wrap: wrap;
 }
 
+.project-group .item:hover {
+  cursor: pointer;
+  border: 1px solid var(--border-color);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .project-group .description {
   padding-top: 20px;
   padding-right: 24px;
   padding-bottom: 20px;
   padding-left: 24px;
-  border-right: 1px solid #EEEEEE;
-  border-bottom: 1px solid #EEEEEE;
-  border-left: 1px solid #EEEEEE;
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
 }
 
 
