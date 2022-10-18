@@ -324,7 +324,7 @@ header {
 }
 
 .social-link:hover,
-.social-link:active {
+.social-link:focus {
   cursor: pointer;
   background-color: var(--accent-color);
   border-radius: 50%;
@@ -354,7 +354,7 @@ header {
 }
 
 .clients-link:hover,
-.clients-link:active {
+.clients-link:focus {
   cursor: pointer;
   border: 1px solid var(--accent-color);
   border-radius: 4px;
@@ -425,7 +425,7 @@ display: inline-block;
 }
 
 .footer-social .social-link:hover,
-.footer-social .social-link:active {
+.footer-social .social-link:focus {
   cursor: pointer;
   background-color: var(--accent-color);
 }
@@ -498,8 +498,6 @@ display: inline-block;
 }
 
 .project-group .item:hover {
-  cursor: pointer;
-  border: 1px solid var(--border-color);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
